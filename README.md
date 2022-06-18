@@ -1,7 +1,8 @@
 #Secret Server Task Csaba Sallai
 
-#Technologies
+Technologies
 Laravel v9.10
-#Intruduction
 
-#Usage
+Intruduction
+
+Usage
