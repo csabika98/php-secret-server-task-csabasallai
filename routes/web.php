@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\secretDb;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('/new',function(){
+   return view('newsecret');
+});
+
+//Route::get('/create', function (){
+//    return view('create');
+//});
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+//Route::post("/savedb", function (){
+//    secretDb::create([
+//        'secretText' => request('SecretText')
+//    ]);
+//    return redirect("/create");
+
+//});
