@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // get api for fetch secrets
-Route::get('/secret/{hash?}', [\App\Http\Controllers\secretController::class,'showSecret']);
+Route::get('/secret/{hash}', [\App\Http\Controllers\secretController::class,'showSecret']);
 // post api for create secrets
 Route::post('/secret', [\App\Http\Controllers\secretController::class,'createSecret']);
 
