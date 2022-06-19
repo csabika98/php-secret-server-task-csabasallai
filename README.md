@@ -10,7 +10,7 @@ MySQL (MariaDB)
 
 
 ## Installation
-In order to install it locally on your computer. you will need to have MySQL/PHP Composer (Or you can use the Laravel Docker Container -> https://laravel.com/docs/9.x/installation)
+In order to install it locally on your computer, you will need MySQL/PHP Composer (or you can use the Laravel Docker Container -> https://laravel.com/docs/9.x/installation)
 1. Clone the repository  
 2. Run the DB migration 
 ```
