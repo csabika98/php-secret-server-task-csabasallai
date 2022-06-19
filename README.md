@@ -31,9 +31,9 @@ php artisan serve
 v0.1 -> Initial version  (2022.06.18)  
 v0.2 -> Creating the DB migration script, model then controller  (2022.06.19)  
 v0.3 -> Creating the POST & GET API routes (for fetch and create )  (2022.06.19)  
-v0.4 ->   
+v0.4 -> in progress (restrict)
 ## Images
-![alt text](https://i.imgur.com/qsy9XS7_d.webp?maxwidth=760&fidelity=grand)
-![alt text](https://i.imgur.com/1wxHsjJ_d.webp?maxwidth=760&fidelity=grand)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
+![alt text](https://i.imgur.com/qsy9XS7.png)
+![alt text](https://i.imgur.com/R4c5uqe.png)
+![alt text](https://i.imgur.com/Mr7iGqZ.png)
+![alt text](https://i.imgur.com/X14DdiU.png)
