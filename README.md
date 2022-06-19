@@ -1,3 +1,4 @@
+Application deployed : https://phpsecretservercsabasallai.herokuapp.com/
 # PHP Secret Server 
 
 A simple web application that saves & fetches your secrets using API.  
