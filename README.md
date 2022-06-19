@@ -14,7 +14,7 @@ In order to install it you will need MySQL/PHP Composer, you can use Wampserver 
 1. Clone the repository  
 2. run this command
 ```
-cp .env.example .env  
+cp .env.example .env  or use the copy command if you have windows
 ```  
 4. Change your MySQL credentials in the .env    
 5. run this command  
