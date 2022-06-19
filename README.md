@@ -11,9 +11,13 @@ MySQL (MariaDB)
 
 ## Installation
 In order to install it you will need MySQL/PHP Composer, you can use Wampserver or XAMPP (or you can use the Laravel Docker Container -> https://laravel.com/docs/9.x/installation)
-1. Clone the repository 
-2. Change your MySQL credentials in the .env  
-3. Run the DB migration 
+1. Clone the repository  
+2. ```cp .env.example .env  ```  
+3. Change your MySQL credentials in the .env    
+4. run this command```  
+php artisan key:generate
+```
+4. Run the DB migration 
 ```
 php artisan migrate
 ```  
