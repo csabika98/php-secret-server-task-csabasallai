@@ -23,9 +23,12 @@ php artisan serve
 
 ## Usage
 
-Go to the {}/secret 
+1. Find the create link on the landing page or visit http://127.0.0.1:8000/new {}  
+2. Type your secret, you will get your hash key which you can use to see your secret  
+3. To access your secrets http://127.0.0.1:8000/new/{hash}
 
-## Change logs
-v0.1 -> Initial version  
-v0.2 -> Creating the DB migration script, model then controller  
-v0.3 -> Creating the POST & GET API routes (for fetch and create )  
+## Changelog
+v0.1 -> Initial version  (2022.06.18)
+v0.2 -> Creating the DB migration script, model then controller  (2022.06.19)
+v0.3 -> Creating the POST & GET API routes (for fetch and create )  (2022.06.19)
+v0.4 -> 
