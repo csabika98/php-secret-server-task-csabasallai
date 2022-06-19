@@ -26,3 +26,6 @@ php artisan serve
 Go to the {}/secret 
 
 ## Change logs
+v0.1 -> Initial version  
+v0.2 -> Creating the DB migration script, model then controller  
+v0.3 -> Creating the POST & GET API routes (for fetch and create )  
