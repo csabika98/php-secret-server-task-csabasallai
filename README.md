@@ -1,6 +1,6 @@
 # PHP Secret Server 
 
-A simple web application that saves & fetches your secrets.
+A simple web application that saves & fetches your secrets using API.  
 You can share your secrets using the random generated URL.
 
 ## Used technologies
