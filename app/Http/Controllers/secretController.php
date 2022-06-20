@@ -30,10 +30,12 @@ class secretController extends Controller
             $secretDb -> save();
             $generatedhash = $secretDb->hash;
             $generatedsecretText = $secretDb -> secretText;
+            $generatedcreatedAt = $secretDb -> createdAt;
+            $generatedremainingViews = $secretDb -> remainingViews;
             $code = "Your secret is created, 201 Created";
             $createdsecret = response()->json(['Your generated hash for fetching'=>$generatedhash, "message"=>$code]); // 201 = created
             $currentUrl = url('/');
-            return view('show', compact('generatedhash', 'generatedsecretText','createdsecret','currentUrl'));
+            return view('show', compact('generatedhash', 'generatedsecretText','createdsecret','currentUrl', 'generatedcreatedAt','generatedremainingViews'));
         }else{
             return response()->json(['405 Invalid input']);
         }
@@ -44,7 +46,7 @@ class secretController extends Controller
             $secretDb = DB::table('secret')->select('hash','secretText')->where('hash','=',$hashcode)->get()->value('secretText');
             $remainingViews = DB::table('secret')->select('remainingViews')->where('hash','=',$hashcode)->get()->value('remainingViews');
 
-            // USING SESSIONS, I know maybe not a good idea :/
+            // USING SESSIONS, I know maybe not a good idea to decrement the values :/
 
             session_start();
             //session_set_cookie_params(0);
