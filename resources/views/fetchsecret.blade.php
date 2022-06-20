@@ -9,5 +9,6 @@
     <p>Your secret:<b>{{ $secretDb }}</b></p>
     <p>Json response: {{$selectedsecret}} </p>
     <p>Remaining Views: {{$remainingViews}}</p>
-    <p>Refresh the page to decrease the Remaining Views</p>
+    <p>If your refresh the page 5 times your secret will be expired.</p>
+    <p>If you edit the hash and trying to use random characters you'll get 404 error</p>
 </div>
