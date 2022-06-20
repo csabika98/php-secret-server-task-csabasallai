@@ -8,5 +8,6 @@
     <h4 class="alert-heading">Your secret</h4>
     <p>Your secret:<b>{{ $secretDb }}</b></p>
     <p>Json response: {{$selectedsecret}} </p>
-    <p>Remaining Views: {{$convertedtoString}}</p>
+    <p>Remaining Views: {{$remainingViews}}</p>
+    <p>Refresh the page to decrease the Remaining Views</p>
 </div>

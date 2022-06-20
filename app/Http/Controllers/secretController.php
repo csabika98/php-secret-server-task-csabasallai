@@ -21,7 +21,7 @@ class secretController extends Controller
             $secretDb-> hash = sha1(time());
             $secretDb-> createdAt = today();
             $secretDb -> expiresAt = today();
-            $secretDb -> remainingViews = 0;
+            $secretDb -> remainingViews = 5;
             $secretDb -> save();
             $generatedhash = $secretDb->hash;
             $generatedsecretText = $secretDb -> secretText;
@@ -35,18 +35,17 @@ class secretController extends Controller
     }
 
     public function showSecret($hashcode){
-            $secretDb = DB::table('secret')->select('hash','secretText')->where('hash','=',$hashcode)->get();
-            $remainingViews = DB::table('secret')->select('remainingViews')->where('hash','=',$hashcode)->get();
-
-            $decode = json_decode($secretDb, true);
-            $encodeViews = json_decode($remainingViews, true);
-            if(empty($decode)){
+            // getting back the values from the database
+            $secretDb = DB::table('secret')->select('hash','secretText')->where('hash','=',$hashcode)->get()->value('secretText');
+            $remainingViews = DB::table('secret')->select('remainingViews')->where('hash','=',$hashcode)->get()->value('remainingViews');
+            // check if the secretDb is empty or not
+            if(empty($secretDb)){
                 return response()->json(['404 Error not found']);
-            } elseif($encodeViews==0){
+            } elseif($remainingViews==0){
                 return response()->json(['Your secret expired, you can only see the secret 5 time']);
             } else {
             $selectedsecret = response()->json(['Found secret'=>$secretDb]);
-            return view('fetchsecret',compact('secretDb','selectedsecret');}
+            return view('fetchsecret',compact('secretDb','selectedsecret','remainingViews'));}
 
     }
 }
