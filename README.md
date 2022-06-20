@@ -46,9 +46,10 @@ v0.4 -> implementing custom error messages/ refresh the page 5 time function (20
 v0.5 -> minor updates in the Views
 
 ## Images (captured 2022.06.20)
-![alt text](https://i.imgur.com/KKncYYY.png)
+![alt text](https://i.imgur.com/8CgarbQ.png)
 ![alt text](https://i.imgur.com/xx0asHX.png)
 ![alt text](https://i.imgur.com/VqvyNOj.png)
+![alt text](https://i.imgur.com/of9RPaG.png)
 ![alt text](https://i.imgur.com/w1MZscj.png)
 ![alt text](https://i.imgur.com/m14A45N.png)
 
