@@ -35,14 +35,20 @@ php artisan serve
 
 1. Find the create link on the landing page or visit http://127.0.0.1:8000/new {}  
 2. Type your secret, you will get your hash key which you can use to see your secret  
-3. To access your secrets http://127.0.0.1:8000/api/secret/{hash} 
+3. To access your secrets http://127.0.0.1:8000/api/secret/{hash}
+4. If you refresh the page 5 time you secret will expire.
+5. Custom error messages implemented if you trying to access to a non-existant secret you will get http 404 error not found. 
 ## Changelog
 v0.1 -> Initial version  (2022.06.18)  
 v0.2 -> Creating the DB migration script, model then controller  (2022.06.19)  
 v0.3 -> Creating the POST & GET API routes (for fetch and create )  (2022.06.19)  
-v0.4 -> in progress (restrict)
-## Images
-![alt text](https://i.imgur.com/qsy9XS7.png)
-![alt text](https://i.imgur.com/R4c5uqe.png)
-![alt text](https://i.imgur.com/Mr7iGqZ.png)
-![alt text](https://i.imgur.com/X14DdiU.png)
+v0.4 -> implementing custom error messages/ refresh the page 5 time function (2022.06.20)
+v0.5 -> minor updates in the Views
+
+## Images (captured 2022.06.20)
+![alt text](https://i.imgur.com/KKncYYY.png)
+![alt text](https://i.imgur.com/xx0asHX.png)
+![alt text](https://i.imgur.com/VqvyNOj.png)
+![alt text](https://i.imgur.com/w1MZscj.png)
+![alt text](https://i.imgur.com/m14A45N.png)
+
